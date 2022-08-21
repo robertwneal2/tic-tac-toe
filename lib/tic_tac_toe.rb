@@ -129,5 +129,5 @@ class Player
   end
 end
 
-game1 = Game.new('Bert', 'Rob')
-game1.play
+# game1 = Game.new('Bert', 'Rob')
+# game1.play
