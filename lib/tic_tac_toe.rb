@@ -28,11 +28,15 @@ class Game
     puts display_result
   end
 
-  private
+  # private comment out for testing
 
   def play_move(move, mark)
     row = move[0].to_i
     col = move[2].to_i
+    place_move_on_board(row, col, mark)
+  end
+
+  def place_move_on_board(row, col, mark)
     @board[row][col] = mark
   end
 
