@@ -1,7 +1,6 @@
 # controls game
 class Game
-
-  NUMS = "1234567890"
+  NUMS = '1234567890'.freeze
 
   def initialize(name1, name2)
     @player1 = Player.new(name1, 'X')
@@ -75,7 +74,7 @@ class Game
   end
 
   def tie?
-    @board.flatten.none? { |mark| mark == " "}
+    @board.flatten.none? { |mark| mark == ' ' }
   end
 
   def valid_move?(move)
@@ -118,7 +117,6 @@ class Game
 
     false
   end
-
 end
 
 # human players
